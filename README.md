@@ -1,5 +1,5 @@
 # api-blog-master（api接口项目）
-###项目搭建
+### 项目搭建
 >使用 Node + express框架 + Mongodb 开发
 
 - node中文网：http://nodejs.cn/
@@ -8,13 +8,13 @@
 
 具体使用查看官网，这里只讲怎么启动项目
 
-###使用前准备
+### 使用前准备
 
 - 了解Node，搭建了Node环境
 - 了解express框架,全局安装express框架
 - 确保已经成功安装mongodb
 
-###启动项目
+### 启动项目
 
 **一、下载项目**
 
