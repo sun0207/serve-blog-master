@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oauth github</title>
+</head>
+<body>
+授权登陆中...
+<script>
+    window.onload = function () {
+        function getQueryStringByName(name) {
+            let result = window.location.search.match(new RegExp('[?&]' + name + '=([^&]+)', 'i'));
+            if (result == null || result.length < 1) {
+                return '';
+            }
+            return result[1];
+        }
+        var code = getQueryStringByName('code');
+        var state = getQueryStringByName('state');
+        var messageObj = {
+            code:code,
+            state:state
+        }
+        window.opener.postMessage(JSON.stringify(messageObj), "https://www.qianyaru.cn");
+        window.close();
+    }
+</script>
+</body>
+</html>
